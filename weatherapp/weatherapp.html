@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="weatherapp.css"/>
+  <link rel="stylesheet" type="text/css" href="grid.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="weatherapp.js"></script>
+  <title>Weather</title>
+</head>
+<body>
+  <div id="insertCity">
+    <input type="text" name="city" id="cityinput" placeholder="Enter a city" onclick="clearContent()" />
+    <input type="button" name="weatherNow" value="Show weather" class="button" onclick="getWeatherElems();"/>
+    <input type="button" name="weatherForecast" value="Show forecast" class="button" onclick="getWeatherForecast();"/>
+  </div>
+  <div id="weatherNowContainer" class="hidden">
+  </div>
+  <div id="weatherForecastContainer" class="hidden">
+    <div class="header">
+    Weather next days
+    </div>
+    <hr>
+    <table>
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+        <tr id="zero" >
+        </tr>
+        <tr id="three">
+        </tr>
+        <tr id="six">
+        </tr>
+        <tr id="nine">
+        </tr>
+        <tr id="twelve">
+        </tr>
+        <tr id="fifteen">
+        </tr>
+        <tr id="eighteen">
+        </tr>
+        <tr id="twenty_one">
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

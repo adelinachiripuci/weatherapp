@@ -1,0 +1,95 @@
+body {
+  background: url("clouds.jpg") repeat ;
+}
+
+.hidden{
+  display: none;
+}
+
+table {
+  margin:0 auto;
+}
+
+#insertCity, #weatherNowContainer, #weatherForecastContainer {
+  background-color: rgba(255,255,255, 0.8);
+  width:80%;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#weatherNow{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#insertCity > input[type="button"]:hover {
+  cursor: pointer;
+  background-color: #0e1e93;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#cityinput{
+  height:4.5vh;
+  width:40vw;
+  margin: 0 10px;
+}
+
+.button {
+  height:5vh;
+  width: 12vw;
+  padding: 6px 10px;
+  margin: 0 10px;
+  background-color: #1E88E5;
+  border-radius: 4px;
+  border-width: 0px;
+  color: #fff;
+  font-size: 14px;
+}
+
+#icon > img {
+  width:70px;
+  height: 70px;
+  margin: 30px;
+}
+
+.weatherElems {
+  width: 200px;
+}
+
+iframe {
+  width:600px;
+  height: 400px;
+  padding: 20px;
+}
+
+thead {
+  background-color: #1E88E5;
+}
+
+thead tr td {
+  padding:10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen
+  and (max-device-width: 320px)
+ {
+   #map > * {
+     width:250px;
+     height: 300px;
+   }
+   #weatherElemsContainer > *{
+   margin: 0 auto;
+  }
+}
+
+tr:nth-child(even) {
+  background-color: #B8DAF0;
+}
